@@ -95,5 +95,6 @@ p {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 40rem;
           flex: 1 1 40rem;
+  background-color: rgba(170, 92, 219, 0.6);
 }
 /*# sourceMappingURL=style.css.map */
