@@ -6,7 +6,7 @@
 }
 
 body {
-  background: #404db0;
+  background: black;
 }
 
 h1,
@@ -22,7 +22,7 @@ p {
 .content {
   position: absolute;
   height: 46%;
-  width: 57%;
+  width: 60%;
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
@@ -48,8 +48,8 @@ p {
 .content .text {
   margin: 0rem 5rem;
   -webkit-box-flex: 1;
-      -ms-flex: 1 1 40rem;
-          flex: 1 1 40rem;
+      -ms-flex: 1 1 0rem;
+          flex: 1 1 0rem;
 }
 
 .content .text h1 {
@@ -93,8 +93,44 @@ p {
 
 .content .content-image {
   -webkit-box-flex: 1;
-      -ms-flex: 1 1 40rem;
-          flex: 1 1 40rem;
-  background-color: rgba(170, 92, 219, 0.6);
+      -ms-flex: 1 1 0rem;
+          flex: 1 1 0rem;
+  background-image: url("../images/image-header-desktop.jpg");
+  height: 446px;
+  background-color: rgba(170, 92, 219, 0.99);
+  background-blend-mode: multiply;
+  border-top-right-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+}
+
+@media screen and (max-width: 375px) {
+  .content {
+    width: 90%;
+    top: 40%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    min-height: 60%;
+  }
+  .content .text {
+    text-align: center;
+    width: 90%;
+  }
+  .content .text h1 {
+    width: 80;
+    margin: auto;
+    margin-top: 3rem;
+  }
+  .content .stats {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .content .stats .stat {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 10rem;
+            flex: 1 1 10rem;
+    margin: 0 0 3rem 0;
+  }
 }
 /*# sourceMappingURL=style.css.map */
