@@ -113,9 +113,17 @@ p {
             flex-direction: column;
     min-height: 60%;
   }
+  .content .content-image {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
   .content .text {
     text-align: center;
     width: 90%;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
   }
   .content .text h1 {
     width: 80;

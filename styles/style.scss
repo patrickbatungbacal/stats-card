@@ -78,9 +78,14 @@ p {
     flex-direction: column;
     min-height: 60%;
 
+    .content-image {
+      order: 2;
+    }
+
     .text {
       text-align: center;
       width: 90%;
+      order: 1;
 
       h1 {
         width: 80;
